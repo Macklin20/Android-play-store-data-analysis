@@ -1,0 +1,9 @@
+data = pd.read_csv("../input/googleplaystore.csv")
+data.info()
+data.shape
+data.head()
+data.tail()
+data1 = data.head()
+data2 = data.tail()
+concat_data = pd.concat([data1,data2],axis=0,ignore_index=True)
+concat_data
